@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Blog - Deep's Sushi Paradise</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<div id="sidebar">
+				<a href="index.html" id="logo"><img src="images/logo.png" alt="LOGO"></a>
+				<div id="navigation">
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li class="menu">
+							<a href="menu.html">Menu</a>
+						</li>
+						<li class="selected">
+							<a href="blog.html">Blog</a>
+						</li>
+						<li class="last">
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="blog">
+				<div class="header">
+					<div class="footer">
+						<div class="body">
+							<ul>
+								<li>
+									<span class="time">30 Jun 2023</span>
+									<h2>The Art of Sushi Making</h2>
+									<a href="blog.html"><img src="images/sushi7.png" alt="Sushi Making"></a>
+									<div>
+										<p>
+											Learn the intricate process of sushi making from our expert chefs. Discover the secrets behind creating perfect sushi rice, selecting the freshest ingredients, and mastering the art of rolling.
+										</p>
+										<a href="blog.html" class="more">Read More...</a>
+									</div>
+								</li>
+								<li>
+									<span class="time">15 May 2023</span>
+									<h2>Health Benefits of Sushi</h2>
+									<a href="blog.html"><img src="images/sushi-making.png" alt="Sushi Health Benefits"></a>
+									<div>
+										<p>
+											Sushi is not only delicious but also packed with numerous health benefits. From omega-3 fatty acids to essential vitamins, find out why sushi is a healthy choice for your diet.
+										</p>
+										<a href="blog.html" class="more">Read More...</a>
+									</div>
+								</li>
+								<li>
+									<span class="time">01 Apr 2023</span>
+									<h2>Exploring Unique Sushi Rolls</h2>
+									<a href="blog.html"><img src="images/sushi8.png" alt="Unique Sushi Rolls"></a>
+									<div>
+										<p>
+											Join us as we explore some of the most unique and innovative sushi rolls created by our chefs. From fusion flavors to artistic presentations, discover sushi like never before.
+										</p>
+										<a href="blog.html" class="more">Read More...</a>
+									</div>
+								</li>
+							</ul>
+							<div class="pages">
+								<a href="blog.html">Prev</a> <a href="blog.html">1</a> <a href="blog.html">2</a> <a href="blog.html">3</a> <a href="blog.html">Next</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="header">
+				<div class="body">
+					<ul>
+						<li>
+							<h4>Discover</h4>
+							<span>&gt; <a href="#header">Sushi Rolls</a></span> <span>&gt; <a href="#header">Nigiri</a></span> <span>&gt; <a href="#header">Sashimi</a></span> <span>&gt; <a href="#header">Specialty Rolls</a></span>
+						</li>
+						<li>
+							<h4>About</h4>
+							<span>&gt; <a href="#header">Our Story</a></span> <span>&gt; <a href="#header">Our Chefs</a></span> <span>&gt; <a href="#header">Gallery</a></span> <span>&gt; <a href="#header">Contact Us</a></span>
+						</li>
+						<li>
+							<h4>Follow Us</h4>
+							<span>&gt; <a href="https://www.facebook.com/rupesh.humagain.3">Facebook</a></span> <span>&gt; <a href="https://www.instagram.com/deep_humagain/">Instagram</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+					<div id="connect">
+						<a href="https://www.facebook.com/rupesh.humagain.3" target="_blank" class="facebook"></a>
+						<a href="https://www.instagram.com/deep_humagain/" target="_blank" class="instagram"></a>
+					</div>
+					<p>
+						Copyright 2023 Deep's Sushi Paradise. All Rights Reserved.
+					</p>
+					<p>
+						Contact us: 07092735325
+					</p>
+				</div>
+			</div>
+			<p id="student-info">
+				Student ID: 23319055 | Name: HUMAGAIN DEEP
+			 </p>
+		</div>
+	</div>
+	<script>
+		function showWelcomeSection() {
+			document.getElementById('welcome-section').style.display = 'block';
+		}
+		
+		function continueToWebsite() {
+			var name = document.getElementById('userName').value;
+			if (name) {
+				localStorage.setItem('userName', name);
+				document.getElementById('welcome-section').style.display = 'none';
+			} else {
+				alert("Please enter your name to continue.");
+			}
+		}
+
+		document.addEventListener("DOMContentLoaded", function() {
+			var userName = localStorage.getItem('userName');
+			if (userName) {
+				document.getElementById('welcome-section').style.display = 'none';
+			} else {
+				document.getElementById('welcome-section').style.display = 'block';
+			}
+		});
+	</script>
+</body>
+</html>

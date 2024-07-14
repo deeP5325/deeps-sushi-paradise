@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Deep's Sushi Paradise</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--[if IE7]>
+        <link rel="stylesheet" href="css/ie7.css" type="text/css">
+    <![endif]-->
+    <style>
+        body {
+            background-color: #e6e6fa; /* Light lavender background */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        #page {
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+        }
+        #header {
+            display: flex;
+        }
+        #sidebar {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            box-sizing: border-box;
+            position: fixed; /* Fixed position to stay at the side */
+            height: 100%;
+        }
+        #content-area {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-left: 250px; /* Ensure it does not overlap with the sidebar */
+        }
+        #logo img {
+            width: 200px; /* Adjusted width to match the other pages */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        #navigation ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        #navigation ul li {
+            margin-bottom: 10px;
+        }
+        #navigation ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+        }
+        #navigation ul li a:hover,
+        #navigation ul li.selected a {
+            background-color: #007bff;
+            color: #fff;
+        }
+        #footer {
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: auto;
+        }
+        #menu-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        #menu-content h1 {
+            font-size: 36px;
+            color: #333;
+            text-align: center;
+        }
+        #menu-content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+            text-align: left;
+        }
+        .menu-item {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .menu-item img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        .menu-item h3 {
+            font-size: 24px;
+            color: #333;
+        }
+        .menu-item p {
+            font-size: 16px;
+            color: #666;
+        }
+        #footer-info {
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f8f8;
+            border-top: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="sidebar">
+                <a href="index.html" id="logo"><img src="images/logo.png" alt="Deep's Sushi Paradise Logo"></a>
+                <div id="navigation">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="menu selected">
+                            <a href="menu.html">Menu</a>
+                            <div class="sub">
+                                <a href="menu.html">Sushi Rolls</a>
+                                <a href="menu.html" class="selected">Nigiri</a>
+                                <a href="menu.html">Sashimi</a>
+                                <a href="menu.html" class="last-child">Specialty Rolls</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li class="last">
+                            <a href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="content-area">
+                <div id="menu-content">
+                    <h1>Our Menu</h1>
+                    <p>
+                        Discover the exquisite flavors of our sushi menu, crafted with the freshest ingredients and traditional techniques.
+                    </p>
+                    <div class="menu-item">
+                        <img src="images/sushi3.png" alt="Sushi Rolls">
+                        <h3>Sushi Rolls</h3>
+                        <p>A variety of delicious sushi rolls including California Roll, Spicy Tuna Roll, and more.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/sushi2.png" alt="Nigiri">
+                        <h3>Nigiri</h3>
+                        <p>Fresh slices of fish served over seasoned rice, including salmon, tuna, and eel.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/sushi5.png" alt="Sashimi">
+                        <h3>Sashimi</h3>
+                        <p>Expertly sliced raw fish, perfect for those who appreciate pure flavors.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="images/sushi4.png" alt="Specialty Rolls">
+                        <h3>Specialty Rolls</h3>
+                        <p>Unique and creative rolls such as Dragon Roll, Rainbow Roll, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+			<p id="student-info">
+				Student ID: 23319055 | Name: HUMAGAIN DEEP
+			 </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Deep's Sushi Paradise</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<!--[if IE7]>
+		<link rel="stylesheet" href="css/ie7.css" type="text/css">
+	<![endif]-->
+	<style>
+		body {
+			background-color: #e6e6fa; /* Light lavender background */
+			margin: 0;
+			font-family: Arial, sans-serif;
+		}
+		#welcome-section {
+			display: none;
+			position: fixed;
+			z-index: 1;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgb(0,0,0);
+			background-color: rgba(0,0,0,0.8);
+			padding-top: 60px;
+			text-align: center;
+			color: #fff;
+		}
+		#welcome-section-content {
+			background-color: #333;
+			margin: 5% auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+			max-width: 400px;
+			text-align: center;
+		}
+		#welcome-section-content h2 {
+			margin: 0;
+			font-size: 24px;
+			color: #fff;
+		}
+		#welcome-section-content input {
+			margin-top: 10px;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			width: 80%;
+		}
+		#welcome-section-content button {
+			margin-top: 10px;
+			padding: 10px 20px;
+			background-color: #007bff;
+			color: #fff;
+			border: none;
+			cursor: pointer;
+			font-size: 16px;
+		}
+		#welcome-section-content button:hover {
+			background-color: #0056b3;
+		}
+		#logo img {
+			width: 200px;
+			height: auto;
+		}
+		#header, #footer {
+			background-color: #fff;
+		}
+		#navigation ul {
+			list-style-type: none;
+			padding: 0;
+		}
+		#navigation ul li {
+			display: inline;
+			margin-right: 10px;
+		}
+		#navigation ul li a {
+			text-decoration: none;
+			color: #333;
+		}
+		#navigation ul li a:hover {
+			color: #007bff;
+		}
+		#footer p#student-info {
+			margin: 0;
+			padding: 10px;
+			text-align: center;
+			background-color: #f8f8f8;
+			border-top: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body onload="showWelcomeSection()">
+	<div id="page">
+		<div id="welcome-section">
+			<div id="welcome-section-content">
+				<h2>Welcome to Deep's Sushi Paradise!</h2>
+				<p>Please enter your name to continue:</p>
+				<input type="text" id="userName" placeholder="Your Name">
+				<br>
+				<button onclick="continueToWebsite()">Submit</button>
+			</div>
+		</div>
+		<div id="header">
+			<div id="sidebar">
+				<a href="index.html" id="logo"><img src="images/logo.png" alt="Deep's Sushi Paradise Logo"></a>
+				<div id="navigation">
+					<ul>
+						<li class="selected">
+							<a href="index.html">Home</a>
+						</li>
+						<li class="menu">
+							<a href="menu.html">Menu</a>
+							<div class="sub">
+								<a href="menu.html">Sushi Rolls</a> <a href="menu.html">Nigiri</a> <a href="menu.html">Sashimi</a> <a href="menu.html" class="last-child">Specialty Rolls</a>
+							</div>
+							<span></span>
+						</li>
+						<li>
+							<a href="blog.html">Blog</a>
+						</li>
+						<li class="last">
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="adbox">
+				<h1>Experience the Best Sushi in Town!</h1>
+				<div class="frame">
+					<div class="section">
+						<p>
+							At Deep's Sushi Paradise, we offer an exquisite selection of sushi made with the freshest ingredients. Visit us for an unforgettable dining experience! <span>Call us: 07092735325</span>
+						</p>
+					</div>
+					<div class="section">
+						<h2>Our Specialties</h2>
+						<p>
+							Try our signature rolls and chef's specials, prepared with a perfect blend of traditional and modern flavors.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contents">
+			<div id="articles">
+				<div>
+					<div class="frame">
+						<img src="images/sushi9.png" alt="Sushi Roll" height="213" width="218">
+						<h2>Delicious Sushi Rolls</h2>
+						<p>
+							Our sushi rolls are crafted with the freshest fish and finest ingredients. Come and enjoy a taste of Japan!
+						</p>
+						<a href="menu.html" class="more">Learn More</a>
+					</div>
+					<div class="frame">
+						<img src="images/sushi10.png" alt="Sushi Plate" height="192" width="189">
+						<h2>Authentic Sushi Plates</h2>
+						<p>
+							Experience the art of sushi with our beautifully presented plates, perfect for any occasion.
+						</p>
+						<a href="menu.html" class="more">Learn More</a>
+					</div>
+					<div id="featured">
+						<ul>
+							<li>
+								<a href="menu.html"> <img src="images/sushi1.png" alt="Special Roll">
+								<h3>Specialty Rolls</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/sushi2.png" alt="Nigiri">
+								<h3>Exquisite Nigiri</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/sushi3.png" alt="Sashimi">
+								<h3>Fresh Sashimi</h3>
+								</a>
+							</li>
+							<li>
+								<a href="menu.html"> <img src="images/sushi4.png" alt="Vegetarian Sushi">
+								<h3>Vegetarian Sushi</h3>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="dummy">
+			</div>
+		</div>
+		<div id="footer">
+			<div class="header">
+				<div class="body">
+					<ul>
+						<li>
+							<h4>Sushi Rolls</h4>
+							<span>&gt; <a href="#header">Classic Rolls</a></span> <span>&gt; <a href="#header">Spicy Rolls</a></span>
+						</li>
+						<li>
+							<h4>Nigiri</h4>
+							<span>&gt; <a href="#header">Salmon Nigiri</a></span> <span>&gt; <a href="#header">Tuna Nigiri</a></span>
+						</li>
+						<li>
+							<h4>Sashimi</h4>
+							<span>&gt; <a href="#header">Salmon Sashimi</a></span> <span>&gt; <a href="#header">Tuna Sashimi</a></span>
+						</li>
+						<li class="last-child">
+							<h4>Specialty Rolls</h4>
+							<span>&gt; <a href="#header">Dragon Roll</a></span> <span>&gt; <a href="#header">Rainbow Roll</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+					<div id="connect">
+						<a href="https://www.facebook.com/rupesh.humagain.3" target="_blank" class="facebook"></a>
+						<a href="https://www.instagram.com/deep_humagain/" target="_blank" class="instagram"></a>
+					</div>
+					<p>
+						Copyright 2023 Deep's Sushi Paradise. All Rights Reserved.
+					</p>
+					<p>
+						Contact us: 07092735325
+					</p>
+				</div>
+			</div>
+			<p id="student-info">
+				Student ID: 23319055 | Name: HUMAGAIN DEEP
+			</p>
+		</div>
+	</div>
+	<script>
+		function showWelcomeSection() {
+			document.getElementById('welcome-section').style.display = 'block';
+		}
+		
+		function continueToWebsite() {
+			var name = document.getElementById('userName').value;
+			if (name) {
+				document.getElementById('welcome-section').style.display = 'none';
+			} else {
+				alert("Please enter your name to continue.");
+			}
+		}
+	</script>
+</body>
+</html>
